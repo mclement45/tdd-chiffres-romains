@@ -18,9 +18,12 @@ public class NombreDecimal {
 	if (valeur==9) return "IX";
 	if (valeur==14) return "XIV";
 	if (valeur==19) return "XIX";
+	if (valeur==24) return "XXIV";
+	if (valeur==29) return "XXIX";
 
-	if(valeur>=10){
-		res+="X"; valeur-=10;
+	while(valeur>=10 && valeur <= 30){
+		res+="X";
+		valeur-=10;
 	}
 	if(valeur >=5 && valeur <=8){
 		res+="V";valeur-=5;
